@@ -1,5 +1,4 @@
 
-
 export default function Erro404() {
   return (
     <div>
@@ -7,3 +6,5 @@ export default function Erro404() {
     </div>
   )
 }
+
+
