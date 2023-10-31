@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import "bootstrap/dist/css/bootstrap.min.css"
 import Erro404 from './routes/Erro404.jsx'
 import Home from './routes/Home.jsx'
 import GlobalStyle from './css/GlobalStyle.js'

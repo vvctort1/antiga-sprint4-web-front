@@ -1,23 +1,39 @@
-import { Header } from "../css/styled";
-import { Link } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 export default function Cabecalho() {
   return (
-    <Header>
-        <h1>EcoUrban</h1>
-        <p>Diminuindo a poluição, um carro de cada vez.</p>
-
-        <nav>
-            <ul>
-                <li><Link to="/smartcities">SmartCities</Link></li>
-                <li><Link to="/problema">Problema</Link></li>
-                <li><Link to="/individuais">Deveres Individuais</Link></li>
-                <li><Link to="/coletivos">Deveres Coletivos</Link></li>
-                <li><Link to="/ideia">Nossa Idéia</Link></li>
-                <li><Link to="/pontosNegativos">Pontos Negativos</Link></li>
-            </ul>
-        </nav>
-    </Header>
+        <Navbar expand="lg" className="bg-body-tertiary">
+        <Container fluid>
+          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav
+              className="me-auto my-2 my-lg-0"
+              style={{ maxHeight: '100px' }}
+              navbarScroll
+            >
+              <Nav.Link href="#action1">Home</Nav.Link>
+              <Nav.Link href="#action2">Link</Nav.Link>
+              <NavDropdown title="Link" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">
+                  Something else here
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="#" disabled>
+                Link
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
   )
 }
