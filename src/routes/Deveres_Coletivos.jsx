@@ -1,9 +1,12 @@
-
+import Coletiva from "../../public/img/responsa_coletiva.jpeg"
 
 export default function Deveres_Coletivos() {
   return (
     <div>
         <h1>Deveres Coletivos</h1>
+
+        <img src={Coletiva} alt="Reponsabilidade Coletiva" />
+
         <p>
           A responsabilidade coletiva envolve ações que são tomadas em conjunto por grupos de pessoas, empresas, organizações e governos para reduzir a poluição do ar. Algumas ações coletivas que podem ser tomadas incluem:
         </p>

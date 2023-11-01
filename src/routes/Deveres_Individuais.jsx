@@ -1,9 +1,12 @@
-
+import Individuais from "../../public/img/responsa.jpeg"
 
 export default function Deveres_Individuais() {
   return (
     <div>
         <h1>Deveres Individuais</h1>
+
+        <img src={Individuais} alt="Deveres Individuais" />
+        
         <p>A responsabilidade individual envolve ações que cada pessoa pode tomar para reduzir a poluição do ar em sua própria vida cotidiana. Algumas ações individuais que podem ser tomadas incluem:</p>
         <ul>
             <li>Reduzir a quantidade de tempo gasto dirigindo, optando por caminhar, pedalar ou utilizar o transporte público.</li>

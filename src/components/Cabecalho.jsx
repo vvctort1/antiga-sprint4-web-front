@@ -2,13 +2,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Logo from "../../public/img/logo.png";
 
 
 export default function Cabecalho() {
   return (
         <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+          {/* <Navbar.Brand href="/">  </Navbar.Brand> <img className="" src={Logo} alt="Logo EcoUrban" /> */}
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -16,21 +17,16 @@ export default function Cabecalho() {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
+              <Nav.Link href="/">Home</Nav.Link>
+              <NavDropdown title="Seções" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="/smartcities"> Smartcities</NavDropdown.Item>
+                <NavDropdown.Item href="/pontosNegativos"> Pontos Negativos  </NavDropdown.Item>
+                {/* <NavDropdown.Divider /> */}
+                <NavDropdown.Item href="/ideia"> Ideia </NavDropdown.Item>
+                <NavDropdown.Item href="/coletivos"> Deveres Coletivos </NavDropdown.Item>
+                <NavDropdown.Item href="/individuais"> Deveres Individuais </NavDropdown.Item>
+                <NavDropdown.Item href="/problema"> Problema </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#" disabled>
-                Link
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
