@@ -12,12 +12,17 @@ import Deveres_Individuais from './routes/Deveres_Individuais.jsx'
 import Deveres_Coletivos from './routes/Deveres_Coletivos.jsx'
 import Ideia from './routes/Ideia.jsx'
 import Pontos_Negativos from './routes/Pontos_Negativos.jsx'
+import Login from './routes/Login.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
   element: <App/>,
   errorElement: <Erro404/>,
   children: [
+    {
+      path: '/login',
+      element: <Login/>
+    },
     {
       path:'/',
       element: <Home/>,

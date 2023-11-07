@@ -1,0 +1,33 @@
+
+
+.cabecalho{
+    height: 100%;
+
+    .divHomeLogin{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+
+        a{
+            text-decoration: none;
+            color: olivedrab;
+        }
+    }
+
+    nav{
+        padding: 10px;
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+
+            li{
+
+                a{
+                    text-decoration: none;
+                    color: olivedrab;
+                }
+            }
+        }
+    }
+}

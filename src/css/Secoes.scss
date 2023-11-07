@@ -1,0 +1,26 @@
+
+.container{
+    padding: 20px;
+    height: 100%;
+    
+    h1{
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .divImg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .conteudo{
+        padding: 20px;
+
+        p{
+            text-indent: 2em;
+            text-align: justify;
+        }
+    }
+
+}
+

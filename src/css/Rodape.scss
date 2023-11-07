@@ -1,0 +1,42 @@
+
+
+.rodape{
+    box-sizing: border-box;
+    height: 10%;
+
+    background-color: lightblue;
+
+    div{
+        
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        section{
+            display: flex;
+            padding-top: 1%;
+            
+            h6{
+                
+                margin-top: 3px;
+            }
+
+           p{
+            margin-top: 3px;
+           }
+
+           ul{
+            list-style: none;
+            padding: 0;
+
+            li{
+                
+                a{
+
+                    text-decoration: none;
+                }
+            }
+           }
+        }
+    }
+}
