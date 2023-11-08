@@ -7,10 +7,16 @@
         display: flex;
         justify-content: space-evenly;
         padding: 10px;
+        font-size: 28px;
 
         a{
             text-decoration: none;
             color: rgb(245, 216, 0);
+            &:hover{
+                font-size: 30px;
+                text-shadow: 2px 2px 2px;
+                transition: 150ms;
+            }
         }
     }
 
@@ -26,8 +32,15 @@
                 a{
                     text-decoration: none;
                     color: rgb(245, 216, 0);
+                    &:hover{
+                        font-size: 18px;
+                        text-shadow: 2px 2px 2px;
+                        transition: 150ms;
+                        
+                    }
+                }
+
+                }
                 }
             }
         }
-    }
-}
