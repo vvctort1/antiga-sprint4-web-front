@@ -10,8 +10,9 @@ export default function Cabecalho() {
      <Header>
       <div className="cabecalho">
         <div className="divHomeLogin">
-          <Link to="/">Home</Link>
           <Link to="/login">Login</Link>
+          <Link to="/">Home</Link>
+          <Link to="/tabela">Tabela</Link>
           
         </div>
         <nav>

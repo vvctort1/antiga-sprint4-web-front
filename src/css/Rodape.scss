@@ -1,10 +1,9 @@
 
 
-.rodape{
+footer{
     box-sizing: border-box;
-    height: 10%;
-
-    background-color: lightblue;
+    height: 7%;
+    background-color: var(--roxo2);
 
     div{
         
@@ -14,28 +13,11 @@
 
         section{
             display: flex;
-            padding-top: 1%;
+            padding-top: .6%;
             
-            h6{
-                
-                margin-top: 3px;
-            }
-
            p{
             margin-top: 3px;
-           }
-
-           ul{
-            list-style: none;
-            padding: 0;
-
-            li{
-                
-                a{
-
-                    text-decoration: none;
-                }
-            }
+            color: rgb(245, 216, 0);
            }
         }
     }

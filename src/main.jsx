@@ -13,6 +13,7 @@ import Deveres_Coletivos from './routes/Deveres_Coletivos.jsx'
 import Ideia from './routes/Ideia.jsx'
 import Pontos_Negativos from './routes/Pontos_Negativos.jsx'
 import Login from './routes/Login.jsx'
+import Tabela from './routes/Tabela.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -26,6 +27,10 @@ const router = createBrowserRouter([{
     {
       path:'/',
       element: <Home/>,
+    },
+    {
+      path: '/tabela',
+      element: <Tabela/>
     },
     {
       path: '/smartcities',
