@@ -1,0 +1,52 @@
+
+table {
+    border-collapse: collapse;
+
+    thead{
+
+        .thTitulo{
+            background-color: purple;
+
+            th{
+                border: 2px solid darkmagenta;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+        tr{
+            background-color: var(--roxo1);
+
+            th{
+                border: 1px solid darkmagenta;
+                color: gold;
+                padding: 10px 60px;
+                text-align: center;
+            }
+        }
+    }
+
+    tbody{
+        tr{
+            background-color: var(--roxo4);
+
+            td{
+                border: 1px solid darkmagenta;
+                color: gold;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+    tfoot{
+        tr{
+            background-color: gray;
+
+            td{
+                border: 1px solid darkmagenta;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+}
